@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class ObstacleMoving : ObstacleEnemy
 {
-    SpriteRenderer m_Sprite;
     [SerializeField] private float x_speed = 1.0f;
     [SerializeField] private float x_max_speed = 5.0f;
     //[SerializeField] private float y_speed = 0f;
@@ -15,8 +14,7 @@ public class ObstacleMoving : ObstacleEnemy
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public override void Start()
     {
-        m_Rigidbody = GetComponent<Rigidbody2D>();
-        m_Sprite = GetComponent<SpriteRenderer>();
+        base.Start();
         turning_timer = time_before_turning;
     }
 
@@ -40,7 +38,7 @@ public class ObstacleMoving : ObstacleEnemy
         {
             turning_timer = time_before_turning;
             is_facing_right = !is_facing_right;
-            m_Sprite.flipY = !m_Sprite.flipY;
+            m_Sprite.flipX = !m_Sprite.flipX;
         }
     }
 }
