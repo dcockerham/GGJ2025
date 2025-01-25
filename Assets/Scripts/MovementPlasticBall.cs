@@ -23,6 +23,7 @@ public class MovementPlasticBall : MonoBehaviour
     	m_Rigidbody = GetComponent<Rigidbody2D>();
 	speed = ground_speed;
 	max_speed = ground_max_speed;
+	m_Rigidbody.linearDamping = ground_damping;
     }
 
     // Update is called once per frame
