@@ -29,13 +29,5 @@ public class MovementPlasticBall : MonoBehaviour
 		m_Rigidbody.linearVelocity = m_Rigidbody.linearVelocity.normalized * max_speed;
 	}
 
-	/*if (Input.GetKey("d")) 
-	{
-		m_Rigidbody.AddForce(Vector2.right * speed);	
-	}
-	if (Input.GetKey("a"))
-	{
-		m_Rigidbody.AddForce(Vector2.left * speed);
-	}*/
     }
 }
