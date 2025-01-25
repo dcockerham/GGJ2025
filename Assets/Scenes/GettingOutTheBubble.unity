@@ -731,6 +731,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7371071319142482895, guid: 71c1f5bf267ae6070a3c311c3b8096d5, type: 3}
+      propertyPath: crowd_damping
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371071319142482895, guid: 71c1f5bf267ae6070a3c311c3b8096d5, type: 3}
+      propertyPath: ground_damping
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8363992706792405032, guid: 71c1f5bf267ae6070a3c311c3b8096d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.43

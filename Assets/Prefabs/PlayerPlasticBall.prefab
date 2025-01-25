@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7371071319142482895}
   m_Layer: 0
   m_Name: PlayerPlasticBall
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493991986373309369}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.43, y: -0.29, z: 0.038382526}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
@@ -165,9 +165,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6769d17cd5107e08fa65101deefbe077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crowd_max_speed: 10
-  crowd_speed: 5
-  crowd_damping: 5
-  ground_max_speed: 20
-  ground_speed: 15
-  ground_damping: 1
+  crowd_max_speed: 5
+  crowd_speed: 1
+  crowd_damping: 7
+  ground_max_speed: 15
+  ground_speed: 10
+  ground_damping: 2.5
