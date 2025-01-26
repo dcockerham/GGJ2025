@@ -24,5 +24,25 @@ public class DebugManager : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SceneManager.LoadScene(3);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            SceneManager.LoadScene(4);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            SceneManager.LoadScene(5);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            SceneManager.LoadScene(6);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            SceneManager.LoadScene(7);
+        }
     }
 }

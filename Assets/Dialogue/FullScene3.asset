@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d3daf69c47b47d3c840bd73d158e139, type: 3}
+  m_Name: FullScene3
+  m_EditorClassIdentifier: 
+  text:
+  - '''Mark? Yo, Mark, wake up.'''
+  - "\"What? Where the hell are we? This isn\u2019t the bar!\""
+  - '''We had a flat tire.'''
+  - '''I had to pull over and pull out the spare tire and change it while you slept
+    idly by dude.'''
+  - '''But I hurt my hand so I need you to drive.'''
+  - "\"Why didn\u2019t you wake me up idiot?\""
+  - '"How are you gonna work with a sprained hand like that?"'
+  - '''Well you looked like you were in a nice dream.'''
+  - "'Didn\u2019t want to burst your bubble there Mr. Bubble.' *laughs*"
+  - "'Don\u2019t worry, it\u2019ll be fine by the time we get to work.'"
+  - "\"Yeah, like he\u2019d care.\""
+  - '''You never know dude. Maybe it will be your lucky break!'''
+  - (Mark began to drive and started to wonder about that remark.)
+  - "\"Mr. Bubbles? That would be a fun title for my game\u2026\""
+  - (Traffic stops Mark on his path.)
+  - '"Ugh, I wish I could have bubbles and just breeze past these stupid crowds."'
+  - '"Hey, that would be a fun level for my game!"'
+  - '"Like, Imagine being late to work, and you use a bubble to get around!"'

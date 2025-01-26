@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d3daf69c47b47d3c840bd73d158e139, type: 3}
+  m_Name: FullScene4
+  m_EditorClassIdentifier: 
+  text:
+  - '"Yeah that would be a fun game."'
+  - '''What would be a fun level?'''
+  - "\"Just this city level where you\u2019re rolling through crowds on your way
+    to work.\""
+  - "'Oh is this for your platformer? Mark, I\u2019m telling you. You gotta submit
+    it to the game jam contest. It\u2019s a real contender for hottest indie game!.'"
+  - "\"You know, you might be right Frank. Alright. I\u2019ll do it!\""
+  - (Mark and Frank arrive at work and Chris greets them.)
+  - "~Guys! You\u2019re early!~"
+  - '''Yeah Mark said he wanted to get to work early and look good for the customers.''
+    *laughs*'
+  - "~Well I\u2019m glad to hear that.~"
+  - ~Oh Mark! I remember you were working on a video game.~
+  - ~A guy came in from a publishing company and I mentioned your name and your bubble
+    game.~
+  - '"What?? What did he say?"'
+  - "~He said he\u2019s excited to meet you. He\u2019s over there sitting in your
+    section.~"
+  - (Mark felt a surge of excitement in his eyes and hysterically said out loud...)
+  - '"Maybe it was good we got to work early afterall."'
+  - "(The man ended up loving Mark\u2019s bubble game.)"
+  - "(Mark\u2019s game was a smash hit and he is the full-time game designer he\u2019s
+    wanted to be.)"

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d3daf69c47b47d3c840bd73d158e139, type: 3}
+  m_Name: FullScene1
+  m_EditorClassIdentifier: 
+  text:
+  - (Mark and his friend, Frank are on their way to their shift as bartenders.)
+  - "(They\u2019re carpooling and are on their way to work when\u2026)"
+  - '"What the hell is up with this traffic?"'
+  - "\"I swear, you can give these idiots a one way street and a green light and
+    there\u2019ll still be traffic on the way to the bar.\""
+  - '''Dude chill out. We got like 40 min still until our shift.'''
+  - "'The bar isn\u2019t going anywhere and it's not like it\u2019s gonna blow up
+    or anything.'"
+  - '"Well, if it did blow up, Chris would still make us come in to serve the same
+    three people who keep that awful bar in business."'
+  - '"Nothing man, just the work shift language coming out."'
+  - "'Well, this traffic isn\u2019t letting up anytime soon, why don\u2019t you take
+    it easy and nap for a bit til we get to work?'"
+  - "'If you keep up that talk near Chris tonight, I\u2019d be driving your ass to
+    the unemployment office tomorrow morning.'"
+  - (Mark simply rolled his eyes with a feeling of regret since he knew Frank was
+    right, and dozed off to sleep.)
