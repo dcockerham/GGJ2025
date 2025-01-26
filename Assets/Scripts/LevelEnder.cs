@@ -27,11 +27,6 @@ public class LevelEnder : MonoBehaviour
 		fadeOutObject.localScale = new Vector3(fadeOutObject.localScale.x + scaleChange, fadeOutObject.localScale.y + scaleChange, fadeOutObject.localScale.z);
 		if (fadeOutTimer <= 0f)
 		{
-			GameObject[] objs = GameObject.FindGameObjectsWithTag("Music");
-			foreach (GameObject obj in objs)
-			{
-				Destroy(obj);
-			}
 		    SceneManager.LoadScene(NextLevel);
 		}
 	}
