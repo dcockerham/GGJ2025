@@ -25,15 +25,18 @@ public class FrameCycler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cycleTimer -= Time.deltaTime;
-        if (cycleTimer < 0.0f)
+        if (sprites.Length != 0)
         {
-            cycleTimer = Random.Range(minLength, maxLength);
-            if (++currentIndex > sprites.Length)
+            cycleTimer -= Time.deltaTime;
+            if (cycleTimer < 0.0f)
             {
-                currentIndex = 0;
+                cycleTimer = Random.Range(minLength, maxLength);
+                if (++currentIndex >= sprites.Length)
+                {
+                    currentIndex = 0;
+                }
+                m_Sprite.sprite = sprites[currentIndex];
             }
-            m_Sprite.sprite = sprites[currentIndex];
         }
     }
 }
