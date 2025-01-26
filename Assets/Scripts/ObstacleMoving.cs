@@ -40,5 +40,7 @@ public class ObstacleMoving : ObstacleEnemy
             is_facing_right = !is_facing_right;
             m_Sprite.flipX = !m_Sprite.flipX;
         }
+
+
     }
 }

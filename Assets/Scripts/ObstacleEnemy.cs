@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class ObstacleEnemy : MonoBehaviour
 {
+    [SerializeField] private bool is_killable = true;
     protected Rigidbody2D m_Rigidbody;
     protected SpriteRenderer m_Sprite;
 
@@ -13,8 +14,11 @@ public class ObstacleEnemy : MonoBehaviour
         m_Sprite = GetComponent<SpriteRenderer>();
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
+    public virtual void OnTriggerEnter2D(Collider2D collider)
     {
-        Destroy(gameObject);
+        if (is_killable)
+        {
+            Destroy(gameObject);
+        }
     }
 }

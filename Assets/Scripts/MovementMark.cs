@@ -10,6 +10,7 @@ public class MovementMark : MonoBehaviour
     }
 
     Rigidbody2D m_Rigidbody;
+    protected SpriteRenderer m_Sprite;
     public GameObject m_AttackColliderPrefab;
     [SerializeField] private float x_speed = 15.0f;
     [SerializeField] private float y_speed = 10.0f;
@@ -18,13 +19,24 @@ public class MovementMark : MonoBehaviour
     [SerializeField] Direction is_facing = Direction.Left;
     [SerializeField] private float attack_offset = 0.5f;
 
+    [SerializeField] private Sprite left_sprite;
+    [SerializeField] private Sprite right_sprite;
+    [SerializeField] private Sprite atk_left_sprite;
+    [SerializeField] private Sprite atk_right_sprite;
+
+    bool is_attacking = false;
+    float timer_attack;
+    [SerializeField] private float attack_length = 0.1f;
+
+    [SerializeField] private float damage_bounce_strength = 5.0f;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         m_Rigidbody = GetComponent<Rigidbody2D>();
-        //m_AttackCollider = this.gameObject.transform.GetChild(0).GetChild(0).gameObject;
+        m_Sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -32,7 +44,7 @@ public class MovementMark : MonoBehaviour
     {
         // Handle movement input
         float xInput = Input.GetAxis("Horizontal") * x_speed;
-        float yInput = Input.GetAxis("Vertical") * y_speed;
+        float yInput = 0.2f + Input.GetAxis("Vertical") * y_speed;
 
         if (xInput != 0)
         {
@@ -47,7 +59,15 @@ public class MovementMark : MonoBehaviour
             m_Rigidbody.linearVelocity = m_Rigidbody.linearVelocity.normalized * max_speed;
         }
 
-        is_facing = (m_Rigidbody.linearVelocity.x >= 0) ? Direction.Right : Direction.Left;
+        if (xInput > 0)
+        {
+            is_facing = Direction.Right;
+        }
+        else if (xInput < 0)
+        {
+            is_facing = Direction.Left;
+        }
+        //is_facing = (xInput >= 0) ? Direction.Right : Direction.Left;
 
 
         // Handle action input
@@ -57,7 +77,42 @@ public class MovementMark : MonoBehaviour
             GameObject newObject = Instantiate(m_AttackColliderPrefab, 
                     new Vector3(newXPosition, transform.position.y, transform.position.z), 
                     Quaternion.identity);
-            Destroy(newObject, 0.5f);
+            is_attacking = true;
+            timer_attack = attack_length;
+            Destroy(newObject, attack_length);
+        }
+        if (is_attacking)
+        {
+            timer_attack -= Time.deltaTime;
+            if (timer_attack < 0)
+            {
+                is_attacking = false;
+            }
+        }
+
+
+        // Handle sprite selection
+        if (!is_attacking)
+        {
+            if (is_facing == Direction.Left)
+            {
+                m_Sprite.sprite = left_sprite;
+            }
+            else
+            {
+                m_Sprite.sprite = right_sprite;
+            }
+        }
+        else
+        {
+            if (is_facing == Direction.Left)
+            {
+                m_Sprite.sprite = atk_left_sprite;
+            }
+            else
+            {
+                m_Sprite.sprite = atk_right_sprite;
+            }
         }
     }
 
@@ -67,6 +122,8 @@ public class MovementMark : MonoBehaviour
         if (hazard != null)
         {
             Debug.Log("HIT!");
+            Vector3 newDir = Vector3.MoveTowards(transform.position, hazard.transform.position, 1.0f);
+            m_Rigidbody.AddForce(newDir * -damage_bounce_strength);
         }
     }
 }
