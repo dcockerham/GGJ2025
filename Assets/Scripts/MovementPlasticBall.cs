@@ -15,7 +15,7 @@ public class MovementPlasticBall : MonoBehaviour
     [SerializeField] private float ground_max_speed = 25.0f;
     [SerializeField] private float ground_speed = 20.0f;
     [SerializeField] private float ground_damping = 1.0f;
-
+	
 
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

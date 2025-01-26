@@ -7919,6 +7919,10 @@ PrefabInstance:
       value: LevelEnder
       objectReference: {fileID: 0}
     - target: {fileID: 4608514742158194790, guid: 116b3a4982f778f20bd35319eb243c09, type: 3}
+      propertyPath: NextLevel
+      value: Dialogue4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608514742158194790, guid: 116b3a4982f778f20bd35319eb243c09, type: 3}
       propertyPath: backgroundMusicContainer
       value: 
       objectReference: {fileID: 1137771737}
