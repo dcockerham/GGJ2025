@@ -123,7 +123,7 @@ public class MovementMark : MonoBehaviour
             }
         }
 
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, left_border, right_border), transform.position.y, transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, left_border, right_border), Mathf.Max(transform.position.y, 0.0f), transform.position.z);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
