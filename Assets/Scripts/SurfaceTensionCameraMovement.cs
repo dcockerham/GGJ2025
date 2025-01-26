@@ -9,6 +9,7 @@ public class SurfaceTensionCameraMovement : MonoBehaviour
     public float speed = 1f;
     public float lerpSpeed = 5f;
     Camera cam;
+    [SerializeField] private Gradient backgroundGradient;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +23,7 @@ public class SurfaceTensionCameraMovement : MonoBehaviour
     void Update()
     {
         cameraTransform.position = new Vector3(cameraTransform.position.x, playerTransform.position.y + 1.5f, cameraTransform.position.z);
+        cam.backgroundColor = backgroundGradient.Evaluate(playerTransform.position.y/100f);
         //Vector3 viewPos = cam.WorldToViewportPoint(playerTransform.position);
 
         //float newPos = cameraTransform.position.y;
