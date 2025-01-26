@@ -52,7 +52,7 @@ public class MovementMark : MonoBehaviour
     {
         // Handle movement input
         float xInput = Input.GetAxis("Horizontal") * x_speed * Time.deltaTime;
-        float yInput = 0.1f + Input.GetAxis("Vertical") * y_speed * Time.deltaTime;
+        float yInput = /*0.1f +*/ Input.GetAxis("Vertical") * y_speed * Time.deltaTime;
 
         if (xInput != 0)
         {

@@ -8,6 +8,7 @@ public class ObstacleMoving : ObstacleEnemy
     //[SerializeField] private float y_max_speed = 0f;
     [SerializeField] private float time_before_turning = 2f;
     [SerializeField] private bool is_facing_right = true;
+    [SerializeField] private bool broadcast_on = false;
     private float turning_timer = 0f;
 
 
@@ -19,9 +20,15 @@ public class ObstacleMoving : ObstacleEnemy
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        //transform.position = new Vector3(transform.position.x + x_speed * Time.deltaTime * (is_facing_right ? 1 : -1), 
+        //    transform.position.y, transform.position.z);
         m_Rigidbody.AddForce(Vector2.right * x_speed * (is_facing_right ? 1 : -1));
+        if(broadcast_on)
+        {
+            Debug.Log(m_Rigidbody.linearVelocity.magnitude);
+        }
         if (m_Rigidbody.linearVelocity.magnitude > x_max_speed)
         {
             m_Rigidbody.linearVelocity = m_Rigidbody.linearVelocity.normalized * x_max_speed;

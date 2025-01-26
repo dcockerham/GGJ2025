@@ -4,6 +4,7 @@ public class ObstacleHoming : ObstacleEnemy
 {
     [SerializeField] private float speed = 1.0f;
     //[SerializeField] private float max_speed = 2.0f;
+    [SerializeField] private float detection_range = 30.0f;
     [SerializeField] private bool is_facing_right = true;
     GameObject playerObject;
 
@@ -17,16 +18,19 @@ public class ObstacleHoming : ObstacleEnemy
     // Update is called once per frame
     void Update()
     {
-        var step = speed * Time.deltaTime; // calculate distance to move
-
-        bool new_is_facing_right = (transform.position.x < playerObject.transform.position.x) ? true : false;
-
-        if (new_is_facing_right != is_facing_right)
+        if ((transform.position - playerObject.transform.position).magnitude < detection_range)
         {
-            is_facing_right = !is_facing_right;
-            m_Sprite.flipX = !m_Sprite.flipX;
-        }
+            var step = speed * Time.deltaTime; // calculate distance to move
 
-        transform.position = Vector3.MoveTowards(transform.position, playerObject.transform.position, step);
+            bool new_is_facing_right = (transform.position.x < playerObject.transform.position.x) ? true : false;
+
+            if (new_is_facing_right != is_facing_right)
+            {
+                is_facing_right = !is_facing_right;
+                m_Sprite.flipX = !m_Sprite.flipX;
+            }
+
+            transform.position = Vector3.MoveTowards(transform.position, playerObject.transform.position, step);
+        }
     }
 }
