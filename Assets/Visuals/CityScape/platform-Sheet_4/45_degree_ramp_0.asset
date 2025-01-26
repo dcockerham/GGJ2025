@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SidewalkFloor-Sheet-Sheet_0
+  m_Name: 45_degree_ramp_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -7716638827015408771, guid: de6f608596b3f65ecbc7210169bf533c, type: 3}
+  m_Sprite: {fileID: 1692117392468158455, guid: d7d50066f63a83ba7b3f36485eab9c41, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

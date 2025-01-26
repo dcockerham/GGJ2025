@@ -22,8 +22,8 @@ public class ConeObstacle : MonoBehaviour
 	if (col.gameObject.tag == "Player")
 	{
 		string scene_name = SceneManager.GetActiveScene().name;
-		SceneManager.LoadScene(scene_name);
 		Debug.Log("Player In");
+		SceneManager.LoadScene(scene_name);
 	}
     }
 }
