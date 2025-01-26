@@ -41,7 +41,11 @@ public class LevelEnder : MonoBehaviour
     {
 	    if (other.gameObject.tag == "Player" && touched == false)
 	    {
-		    touched = true; 
+		    touched = true;
+		    if (GetComponent<AudioSource>() != null)
+		    {
+		    	GetComponent<AudioSource>().Play();
+		    }
 	    }
     }
 }
