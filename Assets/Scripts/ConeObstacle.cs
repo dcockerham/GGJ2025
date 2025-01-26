@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class ConeObstacle : MonoBehaviour
 {
+	[SerializeField] private AudioClip deathSound;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,8 +22,12 @@ public class ConeObstacle : MonoBehaviour
     {
 	if (col.gameObject.tag == "Player")
 	{
+		GameObject backgroundMusic = GameObject.FindWithTag("Music");
+		if (backgroundMusic !=  null && deathSound != null)
+		{
+    			backgroundMusic.GetComponent<BackgroundMusic>().playSecondarySound(deathSound);
+		}
 		string scene_name = SceneManager.GetActiveScene().name;
-		Debug.Log("Player In");
 		SceneManager.LoadScene(scene_name);
 	}
     }
