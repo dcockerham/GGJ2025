@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 57504c90fcdc2fc48a46b783473aac3c
+guid: 7006e8130a193e04bbfca765a09b02dd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6531298916836605319
-    second: Enemy_Pufferfish_0
+      213: -4923029661357636860
+    second: Sea_Floor_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy_Pufferfish_0
+      name: Sea_Floor_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 256
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78d70f3b2c5d3aa50800000000000000
-      internalID: 6531298916836605319
+      spriteID: 40301183b92edabb0800000000000000
+      internalID: -4923029661357636860
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Enemy_Pufferfish_0: 6531298916836605319
+      Sea_Floor_0: -4923029661357636860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
