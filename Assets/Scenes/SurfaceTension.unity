@@ -6850,6 +6850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelEnder
       objectReference: {fileID: 0}
+    - target: {fileID: 2779268076543532771, guid: 116b3a4982f778f20bd35319eb243c09, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4608514742158194790, guid: 116b3a4982f778f20bd35319eb243c09, type: 3}
       propertyPath: NextLevel
       value: Dialogue3
@@ -10825,6 +10829,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondaryAudio: {fileID: 301544411}
+  SurfaceTensionTrack: {fileID: 8300000, guid: 989954555851ce9499627a06e97f5a15, type: 3}
+  GettingOutTrack: {fileID: 8300000, guid: 826cd13fa2b9482a6803e56aa391e622, type: 3}
 --- !u!82 &2130341502
 AudioSource:
   m_ObjectHideFlags: 0
