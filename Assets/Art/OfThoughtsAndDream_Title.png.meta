@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: bfa8336ba4824fa4fab4e1c2a2c61d25
+guid: 23c24fb91537bdf47baffe1c9cf39711
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6136816065491562630
-    second: Thought_Bubble2_0
-  - first:
-      213: -5661618190975346344
-    second: Thought_Bubble2_1
-  - first:
-      213: 3318838705106916310
-    second: Thought_Bubble2_2
+      213: -4770234150365986681
+    second: OfThoughtsAndDream_Title_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,67 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Thought_Bubble2_0
+      name: OfThoughtsAndDream_Title_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 256
+        width: 128
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 680f88382b95a2550800000000000000
-      internalID: 6136816065491562630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thought_Bubble2_1
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 73
-        width: 118
-        height: 56
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 85956097044ed61b0800000000000000
-      internalID: -5661618190975346344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thought_Bubble2_2
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 27
-        width: 61
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6d317b4e732ee0e20800000000000000
-      internalID: 3318838705106916310
+      spriteID: 7808ff36059bccdb0800000000000000
+      internalID: -4770234150365986681
       vertices: []
       indices: 
       edges: []
@@ -188,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c61ec2ad7b69ebb42bc1dcb7f70abd77
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -198,9 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Thought_Bubble2_0: 6136816065491562630
-      Thought_Bubble2_1: -5661618190975346344
-      Thought_Bubble2_2: 3318838705106916310
+      OfThoughtsAndDream_Title_0: -4770234150365986681
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
