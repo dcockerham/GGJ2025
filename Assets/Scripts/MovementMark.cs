@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MovementMark : MonoBehaviour
 {
@@ -28,7 +29,10 @@ public class MovementMark : MonoBehaviour
     float timer_attack;
     [SerializeField] private float attack_length = 0.1f;
 
-    [SerializeField] private float damage_bounce_strength = 5.0f;
+    //[SerializeField] private float damage_bounce_strength = 5.0f;
+
+    float left_border;
+    float right_border;
 
 
 
@@ -37,6 +41,10 @@ public class MovementMark : MonoBehaviour
     {
         m_Rigidbody = GetComponent<Rigidbody2D>();
         m_Sprite = GetComponent<SpriteRenderer>();
+
+        Vector3 stageDimensions = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0));
+        left_border = -stageDimensions.x;
+        right_border = stageDimensions.x;
     }
 
     // Update is called once per frame
@@ -114,6 +122,8 @@ public class MovementMark : MonoBehaviour
                 m_Sprite.sprite = atk_right_sprite;
             }
         }
+
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, left_border, right_border), transform.position.y, transform.position.z);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -122,8 +132,10 @@ public class MovementMark : MonoBehaviour
         if (hazard != null)
         {
             Debug.Log("HIT!");
-            Vector3 newDir = Vector3.MoveTowards(transform.position, hazard.transform.position, 1.0f);
-            m_Rigidbody.AddForce(newDir * -damage_bounce_strength);
+            //Vector3 newDir = Vector3.MoveTowards(transform.position, hazard.transform.position, 1.0f);
+            //m_Rigidbody.AddForce(newDir * -damage_bounce_strength);
+            string scene_name = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(scene_name);
         }
     }
 }

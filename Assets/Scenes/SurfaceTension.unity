@@ -382,7 +382,7 @@ MonoBehaviour:
   m_AttackColliderPrefab: {fileID: 7750257450993078123, guid: fe9113877491a7c4cb6478144bd82800, type: 3}
   x_speed: 2
   y_speed: 1
-  max_speed: 4
+  max_speed: 2.5
   is_facing: 0
   attack_offset: 0.5
   left_sprite: {fileID: 3542783667128330840, guid: 0969ee0656e0d694cb625ee14c3943de, type: 3}
@@ -390,7 +390,6 @@ MonoBehaviour:
   atk_left_sprite: {fileID: -5082547179999986649, guid: 83cfedb462cfe8b4ba852d065881e68e, type: 3}
   atk_right_sprite: {fileID: 3059963392344535448, guid: f69c23a981d86c540acbbeaef8f037bb, type: 3}
   attack_length: 0.1
-  damage_bounce_strength: 20
 --- !u!1001 &910480742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -783,6 +782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anglerfish (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7168512255320071310, guid: 8c5a712c679eb0b4b8dc34b9492ae3d1, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -962,6 +965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anglerfish (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7168512255320071310, guid: 8c5a712c679eb0b4b8dc34b9492ae3d1, type: 3}
+      propertyPath: speed
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1065,7 +1072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7168512255320071310, guid: 8c5a712c679eb0b4b8dc34b9492ae3d1, type: 3}
       propertyPath: speed
-      value: 0.8
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1326,6 +1333,10 @@ PrefabInstance:
     - target: {fileID: 2006058500332905721, guid: 8c5a712c679eb0b4b8dc34b9492ae3d1, type: 3}
       propertyPath: m_Name
       value: Anglerfish
+      objectReference: {fileID: 0}
+    - target: {fileID: 7168512255320071310, guid: 8c5a712c679eb0b4b8dc34b9492ae3d1, type: 3}
+      propertyPath: speed
+      value: 0.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
