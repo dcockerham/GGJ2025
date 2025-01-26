@@ -27,7 +27,7 @@ public class MovementPlasticBall : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 	float moveInput = Input.GetAxis("Horizontal") * speed;
 
